@@ -1,0 +1,25 @@
+<style scoped="">
+  .hero:after {
+    background-image: url({{ page.image-600x600.jpg }});
+  }
+  
+  @media (min-width: 600px) {
+    .hero:after {
+      background-image: url({{ page.image-1200x500.jpg }});
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .hero:after {
+      background-image: url({{ page.image-2000x650 }});
+    }
+  }
+</style>
+<section class="wrapper hero bgcover">	
+  <div class="container">	
+    <div class="hero-content">
+      <h2>{{ page.h2 }}</h2>
+      <p>{{ page.p }}</p>
+    </div>	
+  </div>
+</section>

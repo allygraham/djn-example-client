@@ -1,0 +1,28 @@
+<div class="callback-outer">
+  <p class="title">Request a Callback</p>
+  <form class="callback-form" name="Callback_Form" method="post" action="#" enctype="multipart/form-data">
+    <label for="Callback_Name">
+      <input type="text" name="Callback_Name" class="name validate focus" id="Callback_Name" data-validate="letters" placeholder="Name *">
+      <span class="message" data-default="<i class='fa fa-exclamation-circle' aria-hidden='true'></i>" data-issue="<i class='fa fa-exclamation-circle' aria-hidden='true'></i>" data-success="<i class='fa fa-check' aria-hidden='true'></i>"></span>
+    </label>
+    <label for="Callback_Telephone">
+      <input type="tel" name="Callback_Telephone" class="phone validate focus" id="Callback_Telephone" data-validate="phone" placeholder="Telephone *">
+      <span class="message" data-default="<i class='fa fa-exclamation-circle' aria-hidden='true'></i>" data-issue="<i class='fa fa-exclamation-circle' aria-hidden='true'></i>" data-success="<i class='fa fa-check' aria-hidden='true'></i>"></span>
+    </label>
+    <label for="Callback_Email">
+      <input type="email" name="Callback_Email" class="email validate focus" id="Callback_Email" data-validate="email" placeholder="Email *">
+      <span class="message" data-default="<i class='fa fa-exclamation-circle' aria-hidden='true'></i>" data-issue="<i class='fa fa-exclamation-circle' aria-hidden='true'></i>" data-success="<i class='fa fa-check' aria-hidden='true'></i>"></span>
+    </label>
+    <label for="Callback_Time">
+      <select name="Callback_Time">
+        <option>Callback Time</option> 
+        <option value="Morning">Morning</option>
+        <option value="Afternoon">Afternoon</option>
+        <option value="Evening">Evening</option>
+      </select>
+    </label> 
+    <input name="submit_callback_form" class="submit" type="submit" value="Contact Us" disabled="disabled">
+    <!-- Loading spinner. Add class of "white" to .loading element to make it white -->
+    <p class="loading">Sending <span class="loader"></span></p>
+  </form>	
+</div>

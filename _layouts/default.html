@@ -1,0 +1,40 @@
+<html lang="en-GB">
+  {% include head.html %}
+  <body class="home page-template-default page page-id-6 clickup-chrome-ext_installed" data-gr-c-s-loaded="true" cz-shortcut-listen="true" style="padding-top: 40px;">
+    {% include mobile-nav.html %}
+    <div id="mm-0" class="mm-page mm-slideout">
+      <div class="wrapper">
+        {% include header.html %}
+        {% if page.title == 'Home' %}
+          {% include homepage-cta.html %}
+          {% else %}
+          {% include cta.html %}
+        {% endif %}
+      </div>
+      <div class="back-top-wrap">
+        <p id="back-top" style="display: none;">
+          <a><i class="fa fa-arrow-up fa-2x"></i> Top</a>
+        </p>
+      </div>
+    </div>
+    {% include contact-cta.html %}
+    <main class="wrapper main" role="main">
+      <div class="container">
+        <article class="grid grid8_12 content">
+          <div class="copy">
+            {{ content }}
+        </article>
+        <aside class="sidebar grid grid4_12">
+          <!-- Every other page sidebar content -->
+          {% include contact-form.html %}
+        </aside>
+      </div>
+    </main>
+    {% include gallery.html %}
+    {% include contact-banner.html %}
+    <!-- Back to top arrow -->
+    {% include footer.html %}
+    {% include javascript.html %}
+    {% include mobile-nav-top.html %}
+  </body>
+</html>
