@@ -20,20 +20,29 @@
     {% include contact-cta.html %}
     <main class="wrapper main" role="main">
       <div class="container">
-        <article class="grid grid8_12 content">
-          <div class="copy">
-            {{ content }}
-        </article>
-        <aside class="sidebar grid grid4_12">
-          <!-- Every other page sidebar content -->
-          {% include contact-form.html %}
-        </aside>
+        {% if page.title == 'Meet The Team' %}
+          <article class="grid grid12_12 content">
+              {% include meet-the-team.html %}
+          </article>
+        {% else if %}
+          <article class="grid grid8_12 content">
+            <div class="copy">
+              {{ content }}
+            </div>
+          </article>
+          <aside class="sidebar grid grid4_12">
+            <!-- Every other page sidebar content -->
+            {% include contact-form.html %}
+          </aside>
+        {% endif %}
       </div>
     </main>
     {% if page.title != 'Home' %}
       {% include why-choose-us.html %}
     {% endif %}
-    {% include gallery.html %}
+    {% if page.title != 'Meet The Team' %}
+      {% include gallery.html %}
+      {% endif %}
     {% include contact-banner.html %}
     <!-- Back to top arrow -->
     {% include footer.html %}

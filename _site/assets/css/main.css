@@ -3686,8 +3686,9 @@ blockquote:after {
 }
 
 .mtt-title {
-  margin: 1em 0;
-  color: #8ea4bb
+  margin: 1em 2%;
+  color: #8ea4bb;
+  font-weight: 600;
 }
 
 .employee-wrapper {
