@@ -22,9 +22,9 @@
       <div class="container">
         {% if page.title == 'Meet The Team' %}
           <article class="grid grid12_12 content">
-              {% include meet-the-team.html %}
+            {% include meet-the-team.html %}
           </article>
-        {% else if %}
+        {% else %}
           <article class="grid grid8_12 content">
             <div class="copy">
               {{ content }}
@@ -32,7 +32,11 @@
           </article>
           <aside class="sidebar grid grid4_12">
             <!-- Every other page sidebar content -->
-            {% include contact-form.html %}
+            {% if page.title == 'Contact Us' %}
+              {% include contact-sidebar.html %}
+            {% else %}
+              {% include contact-form.html %}
+            {% endif %}
           </aside>
         {% endif %}
       </div>
