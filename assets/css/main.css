@@ -4004,3 +4004,7 @@ blockquote:after {
 .cta .btn-cont:after {
   background-image: url(../img/b-pavillion-480x480.jpg);
 }
+
+.main-nav .current-page-item > a {
+  color: #8ea4bb;
+}
