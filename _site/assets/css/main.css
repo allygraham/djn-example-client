@@ -3175,7 +3175,9 @@ html.mm-opening .mm-menu.mm-front,html.mm-opening .mm-menu.mm-next {
       display: -ms-flexbox;
       display: -webkit-flex;
       display: -webkit-box;
-      display: flex
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
 }
 
@@ -3206,8 +3208,8 @@ html.mm-opening .mm-menu.mm-front,html.mm-opening .mm-menu.mm-next {
       width:35%;
       top: 0;
       left: 0;
-      padding: 4em 1em;
-      text-align: left
+      padding: 1em;
+      text-align: center;
   }
 }
 
@@ -3429,7 +3431,8 @@ html.mm-opening .mm-menu.mm-front,html.mm-opening .mm-menu.mm-next {
   color: white;
   width: 100%;
   position: absolute;
-  bottom: 0
+  bottom: 0;
+  height: 100%;
 }
 
 .buckets a span {
@@ -3461,7 +3464,9 @@ html.mm-opening .mm-menu.mm-front,html.mm-opening .mm-menu.mm-next {
   display: block;
   background: #8ea4bb;
   font-weight: 300;
-  padding: 1em
+  padding: 1em;
+  position: absolute;
+  bottom: 0;
 }
 
 .buckets:after {
